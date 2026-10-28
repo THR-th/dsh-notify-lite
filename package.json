@@ -1,0 +1,29 @@
+{
+  "name": "dsh-notify-lite",
+  "version": "1.2.0",
+  "description": "蓝发小助手提醒：完成、授权和问题提醒；单击打开设置，支持独立音量、静音、大小与停留时长。不使用 PowerShell。",
+  "type": "module",
+  "main": "./lib/index.js",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "lib",
+    "native",
+    "native-src",
+    "assets",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "NOTICE.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node --test test/engine.test.js test/native-sender.test.js"
+  }
+}

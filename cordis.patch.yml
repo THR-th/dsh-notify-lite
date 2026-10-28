@@ -1,0 +1,6 @@
+- insert:
+    - id: dsh-notify-lite
+      name: dsh-notify-lite
+      config:
+        sound: true
+        repeatSeconds: 60
